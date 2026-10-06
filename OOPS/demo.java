@@ -34,16 +34,47 @@ package OOPS;
 //    }
 // }
 
+// public class demo{
+//    public static void main(String a[]){
+//       int nums[]=new int[4];
+//       nums[0]=6;
+//       nums[1]=3;
+//       nums[2]=4;
+//       nums[3]=5;
+//       for(int i=0;i<=3;i++){
+//          System.err.println(nums[i]);
+//       }
+
+//    }
+// }
+
+
+
 public class demo{
    public static void main(String a[]){
-      int nums[]=new int[4];
-      nums[0]=6;
-      nums[1]=3;
-      nums[2]=4;
-      nums[3]=5;
-      for(int i=0;i<=3;i++){
-         System.err.println(nums[i]);
+      int nums[][]=new int[5][3];
+      for(int i=0;i<5;i++){
+         for(int j=0;j<3;j++){
+            nums[i][j]=(int)(Math.random()*10);  // one decimal random number generate krta hai 
+
+         }
+          
+      }
+      for(int i=0;i<5;i++){
+         for(int j=0;j<3;j++){
+            System.out.print(nums[i][j]+" ");
+         }
+         System.out.println(); 
+      }
+      // for each loop
+
+      for(int n[]:nums){
+         for(int m:n){
+            System.out.print(m+" ");
+         }
+         System.out.println();
       }
 
    }
 }
+
