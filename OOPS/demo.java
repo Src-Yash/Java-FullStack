@@ -52,7 +52,7 @@ package OOPS;
 
 public class demo{
    public static void main(String a[]){
-      int nums[][]=new int[5][3];
+      int nums[][]=new int[5][3];  // multi dimensional array
       for(int i=0;i<5;i++){
          for(int j=0;j<3;j++){
             nums[i][j]=(int)(Math.random()*10);  // one decimal random number generate krta hai 
@@ -66,9 +66,21 @@ public class demo{
          }
          System.out.println(); 
       }
-      // for each loop
 
-      for(int n[]:nums){
+      //  Jagged array
+
+      int num[][]=new int[3][];
+      num[0]=new int[3];
+      num[1]=new int[4];
+      num[2]=new int[2];
+      // for each loop
+      for(int i=0;i<num.length;i++){
+         for(int j=0;j<num[i].length;j++){
+            num[i][j]=(int)(Math.random()*100);
+         }
+      }
+
+      for(int n[]:num){
          for(int m:n){
             System.out.print(m+" ");
          }
