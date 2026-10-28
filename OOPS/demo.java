@@ -99,9 +99,48 @@ package OOPS;
 //    }
 // }
 
+// class Human{
+//    private int age;
+//    private String name;
+
+//    public int getAge(){
+//       return age;
+//    }
+//    public void setAge(int a){
+//       age=a;
+//    }
+//    public void setName(String n){
+//       name = n;
+//    }
+//    public String getName(){
+//       return name;
+//    }
+
+
+// }
+
+// public class demo{
+//    public static void main(String a[]){
+
+//       Human obj = new Human();
+//       System.out.println(obj.getName() + " : " + obj.getAge());
+//       obj.setAge(11);
+//       obj.setName("Yash");
+
+//       System.out.println(obj.getName() + " : " + obj.getAge());
+
+//    }
+// }
+
 class Human{
    private int age;
    private String name;
+
+   public Human(){
+      System.out.println("in constructor");
+      age=23;
+      name="yash";
+   }
 
    public int getAge(){
       return age;
@@ -123,10 +162,13 @@ public class demo{
    public static void main(String a[]){
 
       Human obj = new Human();
-      obj.setAge(11);
-      obj.setName("Yash");
-
+      // Human obj1 = new Human(); 
       System.out.println(obj.getName() + " : " + obj.getAge());
+      // obj.setAge(11);
+      // obj.setName("Yash"); // we are not assigning the values
+//then the default value will be called
 
-   }
+      // System.out.println(obj.getName() + " : " + obj.getAge());
+
+   } 
 }
