@@ -179,32 +179,68 @@ package OOPS;
 //    } 
 // }
 
+// class Mobile{
+//    String brand; //instance variable
+//    int price;    //instance variable
+//    String name;  //instance variable
+
+//    public void print(){
+//       System.out.println(brand+":"+price+":"+name);
+//    }
+// }
+
+// public class demo
+// {
+//    public static void main(String a[]){
+
+//       Mobile obj1=new Mobile();
+//       obj1.brand="apple";
+//       obj1.price=1500;
+//       obj1.name="phone";
+      
+//       Mobile obj2=new Mobile();
+//       obj2.brand="oppo";
+//       obj2.price=1000;
+//       obj2.name="phone";
+   
+//       obj1.print();
+//       obj2.print();
+
+//    }
+// }
 class Mobile{
    String brand; //instance variable
    int price;    //instance variable
-   String name;  //instance variable
+   static String name;  //static variable
 
    public void print(){
       System.out.println(brand+":"+price+":"+name);
    }
+
+   public static void show(){
+      System.out.println(brand+":"+price+":"+name);
+   }
 }
 
-public class Demo
+public class demo
 {
    public static void main(String a[]){
 
       Mobile obj1=new Mobile();
       obj1.brand="apple";
       obj1.price=1500;
-      obj1.name="phone";
+      Mobile.name="phone";
       
       Mobile obj2=new Mobile();
       obj2.brand="oppo";
       obj2.price=1000;
-      obj2.name="phone";
+      Mobile.name="phone";
    
       obj1.print();
       obj2.print();
+
+      // Mobile.print();
+      Mobile.show();
 
    }
 }
