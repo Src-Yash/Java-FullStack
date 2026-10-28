@@ -132,43 +132,79 @@ package OOPS;
 //    }
 // }
 
-class Human{
-   private int age;
-   private String name;
+// class Human{
+//    private int age;
+//    private String name;
 
-   public Human(){
-      System.out.println("in constructor");
-      age=23;
-      name="yash";
-   }
+//    public Human(){
+//       System.out.println("in constructor");
+//       age=23;
+//       name="yash";
+//    }
+//    public Human(int a, String name){
+//       this.age=a;
+//       this.name=name;
 
-   public int getAge(){
-      return age;
-   }
-   public void setAge(int a){
-      age=a;
-   }
-   public void setName(String n){
-      name = n;
-   }
-   public String getName(){
-      return name;
-   }
+//    }
+
+//    public int getAge(){
+//       return age;
+//    }
+//    public void setAge(int a){
+//       age=a;
+//    }
+//    public void setName(String n){
+//       name = n;
+//    }
+//    public String getName(){
+//       return name;
+//    }
 
 
+// }
+
+// public class demo{
+//    public static void main(String a[]){
+
+//       Human obj = new Human();
+//       Human obj1 = new Human(3,"yash");
+//       // Human obj1 = new Human(); 
+//       System.out.println(obj.getName() + " : " + obj.getAge());
+//       // obj.setAge(11);
+//       // obj.setName("Yash"); // we are not assigning the values
+// //then the default value will be called
+
+//       // System.out.println(obj.getName() + " : " + obj.getAge());
+
+//    } 
+// }
+
+class Mobile{
+   String brand; //instance variable
+   int price;    //instance variable
+   String name;  //instance variable
+
+   public void print(){
+      System.out.println(brand+":"+price+":"+name);
+   }
 }
 
-public class demo{
+public class Demo
+{
    public static void main(String a[]){
 
-      Human obj = new Human();
-      // Human obj1 = new Human(); 
-      System.out.println(obj.getName() + " : " + obj.getAge());
-      // obj.setAge(11);
-      // obj.setName("Yash"); // we are not assigning the values
-//then the default value will be called
+      Mobile obj1=new Mobile();
+      obj1.brand="apple";
+      obj1.price=1500;
+      obj1.name="phone";
+      
+      Mobile obj2=new Mobile();
+      obj2.brand="oppo";
+      obj2.price=1000;
+      obj2.name="phone";
+   
+      obj1.print();
+      obj2.print();
 
-      // System.out.println(obj.getName() + " : " + obj.getAge());
-
-   } 
+   }
 }
