@@ -208,39 +208,59 @@ package OOPS;
 
 //    }
 // }
-class Mobile{
-   String brand; //instance variable
-   int price;    //instance variable
-   static String name;  //static variable
+// class Mobile{
+//    String brand; //instance variable
+//    int price;    //instance variable
+//    static String name;  //static variable
 
-   public void print(){
-      System.out.println(brand+":"+price+":"+name);
-   }
+//    public void print(){
+//       System.out.println(brand+":"+price+":"+name);
+//    }
 
-   public static void show(){
-      System.out.println(brand+":"+price+":"+name);
-   }
-}
+//    public static void show(){
+//       System.out.println(brand+":"+price+":"+name);
+//    }
+// }
 
-public class demo
-{
-   public static void main(String a[]){
+// public class demo
+// {
+//    public static void main(String a[]){
 
-      Mobile obj1=new Mobile();
-      obj1.brand="apple";
-      obj1.price=1500;
-      Mobile.name="phone";
+//       Mobile obj1=new Mobile();
+//       obj1.brand="apple";
+//       obj1.price=1500;
+//       Mobile.name="phone";
       
-      Mobile obj2=new Mobile();
-      obj2.brand="oppo";
-      obj2.price=1000;
-      Mobile.name="phone";
+//       Mobile obj2=new Mobile();
+//       obj2.brand="oppo";
+//       obj2.price=1000;
+//       Mobile.name="phone";
    
-      obj1.print();
-      obj2.print();
+//       obj1.print();
+//       obj2.print();
 
-      // Mobile.print();
-      Mobile.show();
+//       // Mobile.print();
+//       Mobile.show();
+
+//    }
+// }
+
+// class Calc
+// {
+//    public int add(int n1,int n2){
+//       return n1+n2;
+//    }
+//    public int sub(int n1,int n2){
+//       return n1-n2;
+//    }
+// }
+
+public class demo{
+   public static void main(String a[]){
+      Calc obj=new Calc();
+      int r1=obj.add(12,5);
+      int r2=obj.sub(43,5);
 
    }
 }
+
